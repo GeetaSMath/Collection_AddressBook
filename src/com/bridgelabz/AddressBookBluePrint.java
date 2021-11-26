@@ -13,6 +13,7 @@ public class AddressBookBluePrint {
     private int zip;
     private long mobileNum;
 
+
     //constructor variables passing from main
     public AddressBookBluePrint(String firstName, String lastName, String address, String city, String state, String eMail, int zip, long mobileNum) {
         this.firstName = firstName;
@@ -24,12 +25,8 @@ public class AddressBookBluePrint {
         this.zip = zip;
         this.mobileNum = mobileNum;
     }
-
     //default constructor
-    public AddressBookBluePrint() {
-    }
-
-    ;
+    public AddressBookBluePrint(){};
 
     //printing instance person details
     @Override
@@ -113,10 +110,9 @@ public class AddressBookBluePrint {
 
 
     @Override
-    public int hashCode() {
+    public int hashCode(){
         return Objects.hash(firstName, lastName, address, city, state, zip, mobileNum, eMail);
     }
-
 
 
 }
